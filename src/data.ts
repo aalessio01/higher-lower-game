@@ -1,12 +1,14 @@
 import type { Question } from "./types";
 
+const BASE_URL = import.meta.env.BASE_URL;
+
 export const QUESTIONS: Question[] = [
   {
     id: 1,
     question: "Welche Website ist älter?",
     options: [
-      { text: "WELT", isCorrect: true, imageUrl: "/images/welt.png", },
-      { text: "Bild", isCorrect: false, imageUrl: "/images/bild.png", },
+      { text: "WELT", isCorrect: true, imageUrl: `${BASE_URL}images/welt.png`, },
+      { text: "Bild", isCorrect: false, imageUrl: `${BASE_URL}images/bild.png`, },
     ],
     feedback: {
       correct: "Richtig – die WELT Website gab es seit 1995",
@@ -17,8 +19,8 @@ export const QUESTIONS: Question[] = [
     id: 2,
     question: "Wann wurde der erste Computer bei Axel Springer eingesetzt?",
     options: [
-      { text: "1990", isCorrect: false, imageUrl: "/images/1990.png", },
-      { text: "1973", isCorrect: true, imageUrl: "/images/1973.png", },
+      { text: "1990", isCorrect: false, imageUrl: `${BASE_URL}images/1990.png`, },
+      { text: "1973", isCorrect: true, imageUrl: `${BASE_URL}images/1973.png`, },
     ],
     feedback: {
       correct: "Richtig – der erste Computer wurde 1973 eingesetzt",
@@ -29,8 +31,8 @@ export const QUESTIONS: Question[] = [
     id: 3,
     question: "Arbeiten unsere Redakteur:innen heute überwiegend digital oder eher analog?",
     options: [
-      { text: "digital", isCorrect: true, imageUrl: "/images/digital.png", },
-      { text: "analog", isCorrect: false, imageUrl: "/images/analog.png", },
+      { text: "digital", isCorrect: true, imageUrl: `${BASE_URL}images/digital.png`, },
+      { text: "analog", isCorrect: false, imageUrl: `${BASE_URL}images/analog.png`, },
     ],
     feedback: {
       correct: "Richtig – unsere Redaktion arbeitet heutzutage eher digital",
@@ -41,8 +43,8 @@ export const QUESTIONS: Question[] = [
     id: 4,
     question: "Welche der Social-Media-Plattformen wird von Axel Springer genutzt?",
     options: [
-      { text: "Tiktok", isCorrect: false, imageUrl: "/images/tiktok.png", },
-      { text: "Instagram", isCorrect: true, imageUrl: "/images/instagram.png", },
+      { text: "Tiktok", isCorrect: false, imageUrl: `${BASE_URL}images/tiktok.png`, },
+      { text: "Instagram", isCorrect: true, imageUrl: `${BASE_URL}images/instagram.png`, },
     ],
     feedback: {
       correct: "Richtig – Axel Springer ist auf Instagram zu finden",
@@ -53,8 +55,8 @@ export const QUESTIONS: Question[] = [
     id: 5,
     question: "Seit wann wurde digitale Arbeit gegenüber analoger Arbeit priorisiert (online first)?",
     options: [
-      { text: "2006", isCorrect: true, imageUrl: "/images/2012.png", },
-      { text: "2016", isCorrect: false, imageUrl: "/images/2016.png", },
+      { text: "2006", isCorrect: true, imageUrl: `${BASE_URL}images/2012.png`, },
+      { text: "2016", isCorrect: false, imageUrl: `${BASE_URL}images/2016.png`, },
     ],
     feedback: {
       correct: "Richtig – seit 2006 wurden Strategien zur Piorisierung der digitalen Arbeit durchgesetzt",
@@ -65,8 +67,8 @@ export const QUESTIONS: Question[] = [
     id: 6,
     question: "Wie wurden in den 1990ern Texte meist an die Druckerei übertragen?",
     options: [
-      { text: "Über Netzwerkkabel", isCorrect: false, imageUrl: "/images/netzwerkkabel.png", },
-      { text: "Auf Disketten", isCorrect: true, imageUrl: "/images/disketten.png", },
+      { text: "Über Netzwerkkabel", isCorrect: false, imageUrl: `${BASE_URL}images/netzwerkkabel.png`, },
+      { text: "Auf Disketten", isCorrect: true, imageUrl: `${BASE_URL}images/disketten.png`, },
     ],
     feedback: {
       correct: "Richtig – Textübertragung bei Axel Springer fand in den 1990ern durch Diskettenaustausch statt",
@@ -77,8 +79,8 @@ export const QUESTIONS: Question[] = [
     id: 7,
     question: "Welche Funktion wurde auf Bild.de zuerst eingeführt?",
     options: [
-      { text: "Kommentarfunktion", isCorrect: false, imageUrl: "/images/comment.png", },
-      { text: "Liveticker", isCorrect: true, imageUrl: "/images/liveticker.png", },
+      { text: "Kommentarfunktion", isCorrect: false, imageUrl: `${BASE_URL}images/comment.png`, },
+      { text: "Liveticker", isCorrect: true, imageUrl: `${BASE_URL}images/liveticker.png`, },
     ],
     feedback: {
       correct: "Richtig – die erste Funktion der Bild-website war ein Liveticker",
@@ -89,8 +91,8 @@ export const QUESTIONS: Question[] = [
     id: 8,
     question: "Welche technische Neuerung machte die tägliche Zusammenarbeit einfacher?",
     options: [
-      { text: "zentraler Server", isCorrect: true, imageUrl: "/images/server.png", },
-      { text: "bessere Drucker", isCorrect: false, imageUrl: "/images/drucker.png", },
+      { text: "zentraler Server", isCorrect: true, imageUrl: `${BASE_URL}images/server.png`, },
+      { text: "bessere Drucker", isCorrect: false, imageUrl: `${BASE_URL}images/drucker.png`, },
     ],
     feedback: {
       correct: "Richtig – zentrale Server vereinfachten die Zusammenarbeit enorm",
@@ -101,8 +103,8 @@ export const QUESTIONS: Question[] = [
     id: 9,
     question: "Welche technische Innovation erhöhte die Reichweite von Online-Inhalten?",
     options: [
-      { text: "Social-Media-Verlinkungen", isCorrect: true, imageUrl: "/images/socials.png", },
-      { text: "QR-Codes auf Zeitungen", isCorrect: false, imageUrl: "/images/qr.png", },
+      { text: "Social-Media-Verlinkungen", isCorrect: true, imageUrl: `${BASE_URL}images/socials.png`, },
+      { text: "QR-Codes auf Zeitungen", isCorrect: false, imageUrl: `${BASE_URL}images/qr.png`, },
     ],
     feedback: {
       correct: "Richtig – Social-Media-Verlinkungen erhöhten die Reichweite der Online-Inhalte enorm",
@@ -113,8 +115,8 @@ export const QUESTIONS: Question[] = [
     id: 10,
     question: "Welche Datenart wurde zuerst systematisch digital archiviert?",
     options: [
-      { text: "Texte", isCorrect: true, imageUrl: "/images/text.png", },
-      { text: "Fotos", isCorrect: false, imageUrl: "/images/photos.png", },
+      { text: "Texte", isCorrect: true, imageUrl: `${BASE_URL}images/text.png`, },
+      { text: "Fotos", isCorrect: false, imageUrl: `${BASE_URL}images/photos.png`, },
     ],
     feedback: {
       correct: "Richtig – Texte wurden als erstes digital archiviert",
@@ -125,8 +127,8 @@ export const QUESTIONS: Question[] = [
     id: 11,
     question: "Welche technische Entwicklung beschleunigte die Fotoübertragung entscheidend?",
     options: [
-      { text: "Scanner", isCorrect: false, imageUrl: "/images/scanner.png", },
-      { text: "Digitalkameras", isCorrect: true, imageUrl: "/images/digitalkamera.png", },
+      { text: "Scanner", isCorrect: false, imageUrl: `${BASE_URL}images/scanner.png`, },
+      { text: "Digitalkameras", isCorrect: true, imageUrl: `${BASE_URL}images/digitalkamera.png`, },
     ],
     feedback: {
       correct: "Richtig – Digitalkameras ermöglichten, Bilder sofort digital zu speichern",
@@ -137,8 +139,8 @@ export const QUESTIONS: Question[] = [
     id: 12,
     question: "Welche Geräte wurden zuerst vernetzt?",
     options: [
-      { text: "Telefone", isCorrect: false, imageUrl: "/images/telefon.png", },
-      { text: "Redaktionsrechner", isCorrect: true, imageUrl: "/images/rechner.png", },
+      { text: "Telefone", isCorrect: false, imageUrl: `${BASE_URL}images/telefon.png`, },
+      { text: "Redaktionsrechner", isCorrect: true, imageUrl: `${BASE_URL}images/rechner.png`, },
     ],
     feedback: {
       correct: "Richtig – Redaktionsrechner wurden verbunden, um Texte, Layouts und Daten gemeinsam bearbeiten zu können",
@@ -149,8 +151,8 @@ export const QUESTIONS: Question[] = [
     id: 13,
     question: "Welche Kommunikationsform setzte sich im Redaktionsalltag durch?",
     options: [
-      { text: "E-Mail", isCorrect: true, imageUrl: "/images/e-mail.png", },
-      { text: "Fax", isCorrect: false, imageUrl: "/images/fax.png", },
+      { text: "E-Mail", isCorrect: true, imageUrl: `${BASE_URL}images/e-mail.png`, },
+      { text: "Fax", isCorrect: false, imageUrl: `${BASE_URL}images/fax.png`, },
     ],
     feedback: {
       correct: "Richtig – E-Mail ermöglichte schnelle, schriftliche Kommunikation und einfache Verteilung von Dokumenten",
@@ -161,8 +163,8 @@ export const QUESTIONS: Question[] = [
     id: 14,
     question: "Wann wurde die Website von WELT vollständig mobiloptimiert?",
     options: [
-      { text: "2014", isCorrect: true, imageUrl: "/images/2014.png", },
-      { text: "2008", isCorrect: false, imageUrl: "/images/2008.png", },
+      { text: "2014", isCorrect: true, imageUrl: `${BASE_URL}images/2014.png`, },
+      { text: "2008", isCorrect: false, imageUrl: `${BASE_URL}images/2008.png`, },
     ],
     feedback: {
       correct: "Richtig – 2014 wurden Inhalte responsiv gestaltet, um auf Smartphones und Tablets zu funktionieren",
@@ -173,8 +175,8 @@ export const QUESTIONS: Question[] = [
     id: 15,
     question: "Wann verlieh das Haus Axel Springer erstmals einen KI-Preis?",
     options: [
-      { text: "2024", isCorrect: false, imageUrl: "/images/2024.png", },
-      { text: "2019", isCorrect: true, imageUrl: "/images/2019.png", },
+      { text: "2024", isCorrect: false, imageUrl: `${BASE_URL}images/2024.png`, },
+      { text: "2019", isCorrect: true, imageUrl: `${BASE_URL}images/2019.png`, },
     ],
     feedback: {
       correct: "Richtig – durch das damals zu uns gehörende Wirtschaftsmagazin „Bilanz“ wurde der Preis erstmals vergeben",
